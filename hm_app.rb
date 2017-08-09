@@ -14,7 +14,7 @@ form input
 
 require './hangman'
 require 'sinatra'
-require 'sinatra/reloader'
+#require 'sinatra/reloader'
 
 game = Game.new
 
