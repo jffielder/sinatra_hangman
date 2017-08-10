@@ -28,7 +28,7 @@ get '/' do
 
     if is_letter?(params[:guess]) 
       
-      game.add_attempt(params[:guess].downcase)
+      game.add_attempt(params[:guess].downcase[0])
       game.update_blanks
       game.update_strikes
 
